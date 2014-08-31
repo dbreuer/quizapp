@@ -58,8 +58,8 @@ passport.use(new LocalStrategy(function(username, password,done){
 }));
 
 passport.use(new FacebookStrategy({
-    clientID: "614084965354404",
-    clientSecret: "3fdc47630454b8b3c5f8b0711309244e",
+    clientID: "573745316055036",
+    clientSecret: "74aab3bdc0694d46624cf05b81296ef6",
     callbackURL: "http://quizzapp-0831.herokuapp.com/auth/facebook/callback",
     profileFields: ['id', 'displayName', 'photos', 'email', 'languages', 'first_name']
   },
