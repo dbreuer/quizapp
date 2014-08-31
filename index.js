@@ -7,7 +7,8 @@ var config = require('./oauth.js')
     , FacebookStrategy = require('passport-facebook').Strategy
     , util = require('util');
 
-mongoose.connect("mongodb://192.168.1.3:27017/quizzapp10");
+//mongoose.connect("mongodb://192.168.1.3:27017/quizzapp10");
+mongoose.connect("mongodb://heroku_app29092077:q3h2soot09qd5udkj846pc9jib@ds033760.mongolab.com:33760/heroku_app29092077")
 
 mongoose.connection.on('open', function(){
   mongoose.connection.db.collectionNames(function(error, names) {
@@ -57,7 +58,7 @@ passport.use(new LocalStrategy(function(username, password,done){
 passport.use(new FacebookStrategy({
     clientID: "614084965354404",
     clientSecret: "3fdc47630454b8b3c5f8b0711309244e",
-    callbackURL: "http://192.168.1.3:8080/auth/facebook/callback",
+    callbackURL: "http://quizzapp-0831.herokuapp.com/auth/facebook/callback",
     profileFields: ['id', 'displayName', 'photos', 'email', 'languages', 'first_name']
   },
   function(accessToken, refreshToken, profile, done) {
