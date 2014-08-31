@@ -1,0 +1,25 @@
+// server.jade
+doctype html
+html
+    include inc/header
+body
+    div.header
+        span.fa-stack.fa-lg
+            i.fa.fa-square.fa-stack-2x
+            i.fa.fa-circle-o-notch.fa-stack-1x
+        div Quizz
+            span App
+    
+        #wordArea
+            div.info Open this site on your mobile device:
+            #gameURL.infoBig Error!
+            div.info Then click <strong>JOIN</strong> and <br/> enter the following Game ID:
+            #spanNewGameCode.gameId Error!
+            #hostWord.hidden 5
+        #playerScores
+            h5 Player Scoreboard
+            hr
+            div(id="playersWaiting") Waiting for players...
+
+    include inc/footer
+    script(src='server.js')

@@ -1,0 +1,85 @@
+// index.jade
+doctype html
+html
+    include inc/header
+body(ontouchmove="BlockMove(event);")
+    div.header
+        span.fa-stack.fa-lg
+            i.fa.fa-square.fa-stack-2x
+            i.fa.fa-circle-o-notch.fa-stack-1x
+        div Quizz
+            span App
+
+    div.refreshBtn
+        a(href="#", onclick="refreshWindow()")
+            i.fa.fa-undo.fa-2x
+
+    if user
+        div.LogOutBtn
+            a(href='/logout')
+                i.fa.fa-power-off.fa-2x
+    else
+        div.LogOutBtn
+            a(href="#", onclick="closeWindow()")
+                i.fa.fa-times.fa-2x
+
+    #gameArea
+
+    script(id="intro-screen-template", type="text/template")
+        div.titleWrapper
+            div.title 
+                span.fa-stack.fa-lg
+                    i.fa.fa-square.fa-stack-2x
+                    i.fa.fa-circle-o-notch.fa-stack-1x
+                span quizzApp
+            if user
+                div.buttons.text-center
+                    button(id="btnJoinGame").btn Let's Start
+            else
+                div.buttons.text-center
+                    a(href='/auth/facebook/', id="btnLoginGame").btn.btn-sm Sign in with facebook
+                
+                div.clearfix
+            #gameID
+
+    script(id="join-game-template", type="text/template")
+        div.joinGameWrapper
+            if user && user.fbId
+                div.circular.pic-animation
+                    img(src="https://graph.facebook.com/#{user.fbId}/picture?type=large", id="profilePic")
+                    if user
+                        h5.white Welcome #{user.name}
+            div.info
+                #playerWaitingMessage.row.hidden
+                    div.col-xs-4.empty
+                        p player1
+                    div.col-xs-4.empty
+                        p player2
+                    div.col-xs-4.empty
+                        p player3
+                
+                input(id="inputPlayerName", placeholder="Choose a nickname", type="text").fade.in
+                if user && user.fbId
+                    input(id="inputPlayerfbId", type="text", value=user.fbId).hidden
+                br/
+                button(id="btnStart").btn.btn-lg.btn-green Enter quiz
+                
+
+    script(id="leaderboard-template", type="text/template")
+        div.leaderBoardGame
+            div.info
+                h3 Leaderboard
+                table
+                    tbody
+
+            div.info
+                button(id="btnTwitter").btn.btn-lg 
+                    i.fa.fa-twitter Tweet result
+                button(id="btnFacebook").btn.btn-lg 
+                    i.fa.fa-facebook Share result
+
+            
+        
+
+    include inc/footer
+    script(src='app.js')

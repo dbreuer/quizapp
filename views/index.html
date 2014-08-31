@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- Ensure that everything scales appropriately on a mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="QuizzApp"> <!-- New in iOS6 -->
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <link rel='shortcut icon' type='image/ico' href='/favicon.ico'>
+    <link rel='fluid-icon' type='image/png' href='/apple-touch-icon.png'>
+    <!-- Let's borrow a cool looking Font from Google -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified Font Awesome Icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="assets/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-circle-o-notch fa-stack-1x"></i>        
+        </span>
+        <div class=''>Quizz<span>App</span></div>
+        
+    </div>
+    <script>
+        document.writeln(gameID);
+    </script>
+     <% if (user) { %>
+        <div class="LogOutBtn">
+            <a href='/logout' class="">
+                <i class="fa fa-power-off fa-2x"></i>
+            </a>
+        </div>
+      <% } %>
+    <div id="gameArea">
+        <!-- This is where the templates defined below will be used -->
+    </div>
+
+    <!-- Main Title Screen that appears when the page loads for the first time -->
+    <script id="intro-screen-template" type="text/template">
+
+        <div class="titleWrapper">
+
+            <div class="title">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-circle-o-notch fa-stack-1x"></i>
+                
+              </span>
+                QuizzApp
+            </div>
+            <div class="buttons text-center">
+                
+                
+                <% if (!user) { %>
+                    <a id='btnLoginGame' href='/auth/facebook' class="btn visible-xs">Sign in with facebook</a>
+                <% } else { %>
+                    <button id="btnJoinGame" class="btn visible-xs">Let's Start</button>
+                    
+                <% } %>
+                <div style="clear:both"></div>
+            </div>
+
+        </div>
+
+    </script>
+
+    <!-- This screen appears when a user clicks "CREATE" on the Title Screen -->
+    <script id="create-game-template" type="text/template">
+        <div class="createGameWrapper">
+
+            <div class="info">Open this site on your mobile device:</div>
+            <div id="gameURL" class="infoBig">Error!</div>
+
+            <div class="info">Then click <strong>JOIN</strong> and <br/> enter the following Game ID:</div>
+            <div id="spanNewGameCode" class="gameId">Error!</div>
+
+            <div id="playersWaiting"></div>
+        </div>
+    </script>
+
+    <!-- This scrreen appears when a player clicks "JOIN" on the Title Screen -->
+    <script id="join-game-template" type="text/template">
+        <div class="joinGameWrapper">
+            <img src='http://placehold.it/120x120' alt='' />
+            <div class="info">
+                <input id="inputPlayerName" onkeyup='console.log(this.value.length); if(this.value.length > 3 ) { document.getElementById("btnStart").className="btn btn-sm fade in";} else { document.getElementById("btnStart").className="btn btn-sm fade"; }' placeholder="Choose a nickname" type="text" />
+            </div>
+
+            <div class="info">
+                <input id="inputGameId" placeholder='Game ID' type="tel"/>
+            </div>
+
+            <div class="info buttons">
+                <button id="btnStart" class="btn btn-sm fade">Start</button>
+                <div id="playerWaitingMessage"></div>
+            </div>
+        </div>
+    </script>
+
+    <!-- This is the 'Host' screen. It displays the word for each player to match -->
+    <script id="host-game-template" type="text/template">
+        <div id="wordArea">
+            
+            <div class="info">Open this site on your mobile device:</div>
+            <div id="gameURL" class="infoBig">Error!</div>
+
+            <div class="info">Then click <strong>JOIN</strong> and <br/> enter the following Game ID:</div>
+            <div id="spanNewGameCode" class="gameId">Error!</div>
+            <div id="hostWord" class="hidden">5</div>
+        </div>
+        <div id="playerScores">
+        <h5>Player Scoreboard</h5>
+        <hr>
+            <div id="playersWaiting">Waiting for players...</div>
+        </div>
+    </script>
+
+    <!-- JavaScript Libraries -->
+
+    <!-- jQuery! -->
+    <script src="libs/jquery-2.0.2.min.js"></script>
+
+    <!-- TextFit resizes text to fill a container.
+        It's used so the titles and game words fit properly on any size screen.
+        https://github.com/STRML/textFit   -->
+    <script src="libs/textFit.min.js"></script>
+
+    <!-- FastClick is used to eliminate the 300ms delay when clicking items on a mobile device
+        https://github.com/ftlabs/fastclick -->
+    <script src="libs/fastclick.js"></script>
+
+    <!-- If Socket.IO is used with Express, then the /socket.io/ path will
+        serve the proper Socket.IO javascript files used by the browser -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- app.js is where all the client-side Anagrammatix game logic -->
+    <script src="app.js"></script>
+
+</body>
+</html>
