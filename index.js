@@ -1,7 +1,7 @@
+require('newrelic');
 // Import the Express module
 var config = require('./oauth.js')
     , express = require('express')
-    , newrelic = require('newrelic')
     , mongoose = require('mongoose')
     , passport = require("passport")
     , LocalStrategy = require('passport-local').Strategy
