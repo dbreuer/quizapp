@@ -1,6 +1,7 @@
 // Import the Express module
 var config = require('./oauth.js')
     , express = require('express')
+    , newrelic = require('newrelic')
     , mongoose = require('mongoose')
     , passport = require("passport")
     , LocalStrategy = require('passport-local').Strategy
@@ -8,6 +9,7 @@ var config = require('./oauth.js')
     , util = require('util');
 
 //mongoose.connect("mongodb://192.168.1.3:27017/quizzapp10");
+
 mongoose.connect("mongodb://heroku_app29092077:q3h2soot09qd5udkj846pc9jib@ds033760.mongolab.com:33760/heroku_app29092077")
 
 mongoose.connection.on('open', function(){
