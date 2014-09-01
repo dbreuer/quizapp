@@ -248,7 +248,6 @@ var wordPool = [
         "words"  : [ "“Developers, Developers, Developers...” name the CEO", "Steve Ballmer" ],
         "decoys" : [ "Tim Cook","Mark Zukerberg","Steve Jobs" ]
     }, 
-    /*
     {
         "words"  : [ "What song is He-man famous for singing?", "4 Non Blondes – Whats Up" ],
         "decoys" : [ "The Bangles – Eternal Flame","Cranberries – Zombie","Miley Cyrus – Party in the USA" ]
@@ -320,6 +319,5 @@ var wordPool = [
     {
         "words"  : [ "kerdes", "valasz" ],
         "decoys" : [ "valsz1","valasz2","valasz3" ]
-    },
-    */
+    }
 ]
