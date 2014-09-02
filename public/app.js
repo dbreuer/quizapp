@@ -133,6 +133,11 @@ jQuery(function($){
          * to the array of word data stored on the server.
          */
         currentRound: 0,
+        /**
+         * Identifies the current round. Starts at 0 because it corresponds
+         * to the array of word data stored on the server.
+         */
+        allowedPlayersInRoom: 1,
 
         /* *************************************
          *                Setup                *
@@ -184,7 +189,7 @@ jQuery(function($){
          * *********************************** */
 
         /**
-         * Show the initial Anagrammatix Title Screen
+         * Show the initial QuizzApp Title Screen
          * (with Start and Join buttons)
          */
         showInitScreen: function() {
@@ -279,7 +284,7 @@ jQuery(function($){
                 App.Host.numPlayersInRoom += 1;
 
                 // If two players have joined, start the game!
-                if (App.Host.numPlayersInRoom === 3) {
+                if (App.Host.numPlayersInRoom === App.allowedPlayersInRoom) {
                     // console.log('Room is full. Almost ready!');
 
                     // Let the server know that two players are present.
@@ -557,7 +562,7 @@ jQuery(function($){
                 App.Host.numPlayersInRoom += 1;
 
                 // If two players have joined, start the game!
-                if (App.Host.numPlayersInRoom === 3) {
+                if (App.Host.numPlayersInRoom === App.allowedPlayersInRoom) {
                     // console.log('Room is full. Almost ready!');
                     
                     // Let the server know that two players are present.

@@ -320,4 +320,235 @@ var wordPool = [
         "words"  : [ "kerdes", "valasz" ],
         "decoys" : [ "valsz1","valasz2","valasz3" ]
     }
+    
+    
 ]
+//
+//Doctor
+//
+//1.	Dr Christiaan Barnard performed the first human heart transplant in which country?
+//South Africa
+//2.	Which doctor, turned author wrote Jurassic Park and The Andromeda Strain?
+//Michael Crichton.
+//3.	Dr Josef Mengele was known by what nickname?
+//The Angel of Death (Nazi experimentation).
+//4.	What was the first name of paediatrician Dr Spock?
+//Benjamin
+//5.	Francoise Duvalier was president of Haiti 1957-1971. By what nickname was he better known?
+//Papa Doc
+//6.	Sir Arthur Conan Doyle was a physician and author who studied medicine at a university in which city?
+//Edinburgh.
+//7.	Of the four labour politicians who set up the Social Democratic Party in 1981, which one was a doctor?
+//Dr David Owen. (with Shirley Williams, Roy Jenkins & Bill Rodgers)
+//8.	Which BAFTA award winning comedian and presenter is still a registered GP.
+//Harry Hill.
+//9.	Dr Hastings Banda was president, prime minister and dictator of which African country for 30 years?
+//Malawi.
+//10.	Dr Henry Heimlich (credited with inventing the Heimlich manoeuvre), was born, and still lives, in which country?
+//USA
+//
+//Science and nature
+//Which Apollo moon mission was the first to carry a lunar rover vehicle?
+//Apollo 15
+//The scientific unit LUMEN is used in the measurement of what?
+//Light
+//Which organ of the body is affected by Bright's Disease?
+//Kidney
+//What is the boiling point of water using the scientific kelvin scale of temperature measurement
+//373k - kelvins
+//What is the lightest metal under standard conditions?
+//Lithium
+//How many surfaces does a Mobius strip have?
+//One
+//How many wings does a bee have?
+//Four
+//What is the collective noun for a group of moles?
+//A labour
+//Which breed of dog has breeds called Welsh, Scottish and Irish?
+//Terrier
+//What is the common name for the medical condition epistaxis?
+//Nose bleed
+//How is the chaparral cock, a ground cuckoo native of Mexico, better known?
+//The Roadrunner
+//What sort of creature is a cassowary?
+//A (flightless) bird
+//What is made using soda, lime and silica?
+//Glass
+//Who created Wikipedia on the World Wide Web?
+//Jimmy Wales
+//Common, Water and Pygmy are types of which British mammal?
+//Shrew
+//Where in the human body would you find the Islets of Langerhans?
+//The pancreas
+//What is the only bone in the human body that is not attached to any other bone?
+//The hyoid
+//What mineral has the lowest number on the Mohs scale?
+//Talc
+//What mineral has the highest number on the Mohs scale?
+//Diamond
+//What is the more common name for the medical condition of periorbital hematoma?
+//Black eye
+//What is the common name for the liquid secreted by your lacrimal glands?
+//Tears
+//Who discovered the element Oxygen?
+//Joseph Priestley
+//What is the collective name for a group of sea cucumbers?
+//A pickle
+//Where in the body would you find an astrocyte?
+//The brain
+//What is measured on the Mohs scale?
+//The hardness of minerals
+//What are Grey Dagger, Forester and Dingy Footman species of?
+//Moths
+//Which type of animals find their way home using magnetism?
+//Molluscs
+//What was the name of Yuri Gagarin`s space ship?
+//Vostok 1
+//The word HENNA can be made using the periodic symbols of which three elements?
+//(He) Helium (N) Nitrogen (Na) Sodium
+//What is the more common name for the type of bear called the Ursus Maritimus?
+//Polar bear
+//What is the hardest natural substance?
+//diamond
+//Nephrology is the study of which internal organ?
+//The kidney
+//Where on a horse do you find its poll?
+//Between the ears
+//What does MRSA stand for?
+//Methicillin Resistant Staphyloccocus Aureus
+//Which spider gets its name from when the female sometimes eats the male after mating?
+//Black Widow Spider
+//What is ylang-ylang - a herb or a flower?
+//Flower
+//Where in the human body would you find Island of Reils?
+//The brain
+//What is the hardest natural substance?
+//Diamond
+//What is the process called in which birds lose their feathers?
+//Moulting
+//What is the only bird that is capable of seeing the colour blue?
+//The owl
+//What is the only animal that cannot jump?
+//Elephant
+//From the Sun, what is the name of the nearest star?
+//Proxima Centauri
+//In computing what does the abbreviation U.S.B. stand for?
+//Universal Serial Bus
+//What does the information technology term RAM stand for?
+//Random Access Memory
+//What is the chemical symbol for Arsenic?
+//As
+//What is the largest internal human organ?
+//The liver
+//Used in satellite navigation, what do the initials in the term GPS stand for?
+//Global Positioning System
+//What is the main effect of vitamin K deficiency?
+//Bleeding
+//Little, Eurasian Eagle and Burrowing are all types of which species of bird?
+//Owl
+//What is the lightest chemical element?
+//Hydrogen
+//What is the collective term for a group of racoons?
+//A nursery
+//What is the collective term for a group of racehorses?
+//A string of racehorses
+//To the nearest whole number, what percentage of the Earth's atmosphere is nitrogen?
+//78%
+//In the world of the internet, what do the letters HTTP stand for?
+//Hyper Text Transfer Protocol
+//What gas do all fuels need in order to burn?
+//Oxygen
+//By what name is the Sodium Chloride more commonly known?
+//Salt
+//Sand consists of silicon and what other element?
+//Oxygen
+//What is the brightest star in the northern hemisphere?
+//Sirius
+//Common, Arctic and Sooty are all varieties of which type of bird?
+//Tern
+//Worcester Black, Arlington Pippin and Bartlett are all varieties of which type of fruit?
+//Pear
+//Where in the human body would you find the scaphoid bone?
+//In the wrist
+//The does the chemical symbol Pb stand for?
+//Lead
+//How many stomachs does a cow have?
+//Four
+//Which bird lays the biggest egg in the world?
+//The ostrich
+//What is the name of the pouch in which marsupials carry their young?
+//The marsupium
+//What African animal kills the most people?
+//The Crocodile
+//Which bird can run the fastest?
+//Ostrich
+//What is the layer of the atmosphere closest to the earth`s surface called?
+//The Troposphere
+//What nuclear process takes place in an atomic bomb?
+//Fission
+//What is the only native North American marsupial?
+//The Opossum
+//Which leaves form the diet of the silkworm?
+//Mulberry
+//True or False: Sharks do not blink?
+//True
+//True or False: All polar bears are left-handed?
+//True
+//What is the condition of Nitrogen Embolism more commonly known as?
+//The bends
+//What is the more common name for the scapula?
+//The shoulder blade
+//Who invented a vaccination for smallpox?
+//Edward Jenner
+//An orchidectomy is the surgical removal of what?
+//Testicles
+//What does LASER stand for?
+//Light Amplification by Stimulated Emission of Radiation
+//What does `http` stand for, as used in website addresses?
+//Hyper Text Transfer Protocol
+//What name is given to a cow that has not had a calf?
+//A Heifer
+//
+//Brother in Arm
+//What was the name of the brothers who made the first powered airplane flight in 1903?
+//Orville & Wilber Wright.
+//2.	What was the name of the brothers who wrote, amongst others, the popular fairy tales, ‘Sleeping B eauty’, ‘Cinderella’ and ‘Snow White?
+//Wilhelm & Jacob Grimm.
+//3.	What were the names of the four Marx brothers?
+//Groucho, Harpo, Chico, & Zeppo.
+//4.	What were the real names of the Righteous Brothers?
+//Bill Medley & Bobby Hatfield.
+//5.	Who is missing from this list of acting brothers, Paul, Stephen, Joe and who?
+//Mark(McGann)
+//6.	Clemens and August Brenninkmieler founded which fashion store in 1841?
+//C&A.(The initials of their christian names).
+//7.	What is the name of the brothers who formed the band Spandau Ballet, then went on to portray the Kray twins in the film ‘The Krays’?
+//Gary & Martin Kemp.
+//8.	Which company was founded by Rudi Dassler in direct competition to Addidas, the company founded by his brother Adolf Dassler?
+//Puma.
+//9.	What are the names of the brothers known for producing and directing films such as ‘The Big Leowski, & ‘No Country for Old Men?
+//Joel & Ethen Cohen
+//10.	What are the names of the brothers who have won Olympic, World, and Commonwealth competitions in the triathlon?
+//Alistair & Jonny Brownlee.
+//
+//PUB quizz
+//In 2006 there were approximately how many pubs in the UK? 47,500, 57,500 or 67,500?
+//57,500
+//2.	What is the second most common pub name in the UK behind the Red Lion?
+//The Royal Oak
+//3.	Amos Brierly and Mr Wilks ran which pub on TV?
+//The Woolpack (in Emmerdale)
+//4.	What is the claim to fame of the pub called the Nutshell in Bury St. Edmunds?
+//It is the smallest pub in Britain
+//5.	Famous for its double glazing advert in the 1970s, what is the claim to fame of the Tan Hill Inn in Yorkshire?
+//It is the highest pub in Britain
+//6.	The pub with the longest name in the UK has how many letters in it? 55, 75 or 95?
+//55 (The Old Thirteenth Cheshire Astley Volunteer Rifleman Corps Inn)
+//7.	With only one letter in its name. What is the name of the pub with the shortest name?
+//Q (in Stalybridge)
+//8.	What is the name of the brewery that supplies the beer to the Rovers Return in Coronation Street?
+//Newton and Ridley
+//9.	The Bottle Inn at Marshwood in Dorset has what annual eye watering and tongue numbing item on the menu?
+//Nettles (it’s home to the national annual nettle-eating competition)
+//10.	What was the name of the pub that mysteriously burnt down in Eastenders?
+//The Dagmart
