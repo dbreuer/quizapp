@@ -137,7 +137,7 @@ jQuery(function($){
          * Identifies the current round. Starts at 0 because it corresponds
          * to the array of word data stored on the server.
          */
-        allowedPlayersInRoom: 1,
+        allowedPlayersInRoom: 3,
 
         /* *************************************
          *                Setup                *
